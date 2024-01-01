@@ -1,0 +1,187 @@
+
+
+header{
+    /* position: sticky; */
+    /* padding: 0 20px 0 5px; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family-secondary);
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(6, 0, 23, 0.9);
+    z-index: 100;
+}
+
+header .logo{
+    background: none;
+    width: 80px;
+    margin-left: 20px;
+    z-index: 100;
+}
+
+header nav ul{
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+nav ul li{
+    background: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--h3-size);
+    background: none;
+}
+
+header button{
+    color: white;
+    padding: 0;
+    border: none;
+    font-size: 35px;
+}
+
+nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    /* bottom: 0; */
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax rgba(65, 65, 65, 0.5);
+}
+
+.navBar{
+	list-style: none;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav.visible{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.openBtn{
+    margin-right: 30px;
+    z-index: 100;
+}
+
+.openBtn.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .redesContainer{
+    gap: 15px;
+    margin: 10px;
+    transition: 0.2s;
+    position: absolute;
+    right: 22px;
+    flex-direction: column;
+    top: 30vh;
+    background: none;
+}
+
+header .redesContainer img{
+    background: none;
+    width: 15px;
+}
+
+header .redesContainer img:hover{
+    cursor: pointer;
+    scale: 1.2;
+
+}
+
+nav ul li a{
+    padding: 5px 10px;
+    border-radius: 15%;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    box-shadow: 0px 0px 30px var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+nav ul li:hover{
+    scale: 1.1;
+}
+
+@media (width>610px){
+
+    header button{
+        display: none;
+    }
+
+    header nav{
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        box-shadow: none;
+        background: none;
+        padding: 0;
+        height: 70%;
+        justify-content: center;
+        top: 0;
+    }
+
+    #nav ul{
+        flex-direction: row;
+        gap: 25px;
+        height: 100%;
+        background: none;
+    }
+
+    header .redesContainer{
+        position: relative;
+        display: inline-flex;
+        flex-direction: row;
+        top:0;
+    }
+
+    nav ul li a{
+        font-size: var(--h2-size);
+        /* border-bottom: 1px solid var(--secondary-color); */
+    }
+
+}
+
+@media (width>900px){
+
+    header{
+        /* padding: 0 40px 0 20px; */
+        height: 120px;
+    }
+
+    header .logo{
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    header .redesContainer{
+        margin-right: 40px;
+    }
+
+    #nav ul{
+        gap: 40px;
+    }
+
+    nav ul li a{
+        font-size: var(--h1-size);
+    }
+
+    header .redesContainer img{
+        width: 20px;
+    }
+}
