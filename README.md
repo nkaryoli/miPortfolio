@@ -11,13 +11,11 @@ The disign is simple but dinamyc at the same time, using HTML and CSS for the ov
 
 ## Demo Figma
 
+![Demo Movil](src/assets/mockupMovil.png)
 
-![Demo Movil](src/assets/demos.png)
+![Demo Deskup](src/assets/mockupDeskup.png)
 
-- [demo movil] (https://www.figma.com/proto/C2pfjULsZ0rQ16Q2iVSPnm/miPortfolio?type=design&node-id=40-546&t=V1aNQ9g5kL24SBYo-1&scaling=scale-down&page-id=3%3A139&starting-point-node-id=40%3A546&mode=design)
-- [demo deskup] (https://www.figma.com/proto/C2pfjULsZ0rQ16Q2iVSPnm/miPortfolio?type=design&node-id=40-809&t=0yYl2mg3v0a7dnk9-1&scaling=scale-down&page-id=3%3A140&starting-point-node-id=40%3A809&mode=design)
-
-## Tools used:
+## Herramientas Utilizadas
 - Jira.
 - Figma.
 - Visual Estudio Code.
