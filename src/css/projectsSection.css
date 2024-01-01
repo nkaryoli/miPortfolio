@@ -14,7 +14,7 @@
     padding: 15px;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
 }
 
 .projects h1, .lenguages h1{
@@ -37,17 +37,14 @@
 /*efecto imagenes */
 
 .card figure{
-    /* border: 1px solid red; */
     position: relative;
     height: 160px;
     width: 300px;
     overflow: hidden;
     border-radius: 4px;
-    /* box-shadow: 0px 15px 25px rgba(0,0,0,0.5); */
 }
 
 .card figure img{
-    /* width: 100%;*/
     height: 100%; 
     transition: all 0.5s ease-out;
 }
@@ -90,6 +87,7 @@
 .cape a .img{
     background: none;
 }
+
 /**/
 
 .card:hover{
