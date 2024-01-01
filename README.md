@@ -6,6 +6,10 @@
 
 ## Demo Figma
 
+![Demo Movil](src/assets/mockupMovil.png)
+
+![Demo Deskup](src/assets/mockupDeskup.png)
+
 ## Herramientas Utilizadas
 - Jira.
 - Figma.
