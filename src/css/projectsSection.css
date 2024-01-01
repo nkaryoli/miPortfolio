@@ -1,0 +1,159 @@
+
+/*PROJECTS SECTION*/
+
+.projects{
+    /* border: 1px solid red; */
+    margin: 100px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.row{
+    /* border: 1px solid red; */
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.projects h1, .lenguages h1{
+    color: var(--primary-color);
+    font-family: var(--font-family-primary);
+    font-weight: 800;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card{
+    border: 1px solid rgba(240, 0, 142, 0.4);
+    max-width: 340px;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(240, 0, 142, 0.2);
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+/*efecto imagenes */
+
+.card figure{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 160px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+    /* box-shadow: 0px 15px 25px rgba(0,0,0,0.5); */
+}
+
+.card figure img{
+    /* width: 100%;
+    height: 100%; */
+    transition: all 0.5s ease-out;
+}
+
+.card figure .cape{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.card figure:hover > .cape{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card figure:hover > .cape p{
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.card figure:hover > img{
+    transform: scale(1.05);
+}
+
+.cape p{
+    color: var(--primary-color);
+    font-family: var(--font-family-tertiary);
+    font-size: var(--h2-size);
+    font-weight: 700;
+    background: none;
+    transition: all 0.5s ease-out;
+}
+
+.cape a .img{
+    background: none;
+}
+/**/
+
+.card:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.card .screenShot{
+    width: 100%;
+}
+
+.card div img{
+    height: 20px;
+    margin: 20px 20px 20px 1px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(113, 255, 238, 0.3);
+}
+
+.card h2{
+    color: var(--primary-color);
+    font-family: var(--font-family-primary);
+    font-size: var(--h2-size);
+}
+
+.card h3{
+    color: var(--secondary-color);
+    font-family: var(--font-family-tertiary);
+    font-size: var(--h3-size);
+    font-weight: 400;
+}
+
+.card .text{
+    color: var(--text-color);
+    font-family: var(--font-family-secondary);
+    font-size: var(--paragraf-size);
+    margin: 10px 0;
+}
+
+@media (width>900px){
+    
+    .row{
+        flex-direction: row;
+        align-items: flex-start;
+        height: 450px;
+    }
+
+    .card{
+        height: 410px;
+    }
+
+    .projects h1{
+        font-size: 35px;
+    }
+
+    .card h2{
+        font-size: 20px;
+    }
+
+    .card h3{
+        font-size: 15px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+}
