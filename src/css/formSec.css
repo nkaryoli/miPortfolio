@@ -4,6 +4,7 @@
 .formContainer{
     padding: 50px 20px;
     position: relative;
+    background: none;
 }
 
 form{
@@ -114,6 +115,7 @@ form button:hover{
         position: absolute;
         top: -600px;
         right: 0px;
+        background: none;
     }
 
     form{
