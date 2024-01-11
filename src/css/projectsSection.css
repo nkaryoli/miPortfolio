@@ -147,7 +147,7 @@
     }
 
     .cardsContainer::after{
-        content: url("../assets/fondoProjects\ \(6\).png");
+        content: url("/src/assets/formBackground\ \(7\).png");
         position: absolute;
     }
 
