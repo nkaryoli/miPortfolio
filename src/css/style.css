@@ -2,9 +2,10 @@
 @import "./base.css";
 
 :root{
-    --primary-color: #71FFEE;
+    --primary-color: #00DFF0;
     --secondary-color: #F0008E;
-
+    --tertiary-color: #5100FF;
+    --quaternary-color: #E55AFD;
     --text-color: #C1C1C1;
     --background-color: #060017;
     --font-family-primary: 'orbitron', sans-serif;
@@ -29,7 +30,6 @@ section[id]{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid white; */
 }
 
 main{
@@ -40,83 +40,26 @@ main{
     display:flex;
 }
 
-/*ABOUTME SECTION*/
-
-.aboutMeContainer{
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 30px;
-    gap: 15px;
-    background: none;
-}
-
-.aboutMeContainer h1{
-    max-width: 310px;
-    text-align: center;
-    color: var(--text-color);
+h1{
+    color: transparent;
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary-color),
+        var(--primary-color),
+        var(--tertiary-color)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
     font-family: var(--font-family-primary);
-    font-size: var(--h2-size);
-    background: none;
-}
-
-h1 span{
-    color: var(--secondary-color);
-    background: none;
-}
-
-.aboutMeContainer h2{
-    max-width: 310px;
+    font-weight: 800;
     text-align: center;
-    color: var(--primary-color);
-    font-family: var(--font-family-primary);
     font-size: var(--h1-size);
-    background: none;
-}
-
-.aboutMeContainer p{
-    max-width: 380px;
-    color: var(--text-color);
-    font-family: var(--font-family-secondary);
-    font-size: var(--paragraf-size);
-    font-weight: 400;
-    text-align: center;
-    background: none;
+    z-index: 1;
 }
 
 @media (width>900px){
 
-    main{
-        /* border: 1px solid red; */
-        display: flex;
-        /* flex-direction: row-reverse; */
-        justify-content: center;
-        gap: 100px;
-        height: 100vh;
-        align-items: center;
-        /* padding: 250px 0 0 30px; */
+    h1{
+        font-size: 50px;
     }
-    
-    .aboutMeContainer{
-        /* border: 1px solid red; */
-        max-width: 400px;
-        align-items: end;
-    }
-
-    .aboutMeContainer h1{
-        font-size: 30px;
-    }
-
-    .aboutMeContainer h2{
-        font-size: 40px;
-        max-width: 400px;
-        text-align: right;
-    }
-
-    .aboutMeContainer p{
-        font-size: 18px;
-        max-width: 450px;
-        text-align: right;
-    }
-
 }
-

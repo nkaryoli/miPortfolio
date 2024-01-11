@@ -4,14 +4,7 @@
 .lenguages{
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
-}
-
-.lenguages h1{
-    margin-bottom: 20px;
-    max-width: 200px;
-    z-index: 1;
-    background: none;
+    margin: 150px 0;
 }
 
 .iconWrap{
@@ -44,9 +37,15 @@
     height: 200px;
     vertical-align: middle;
     position: absolute;
+    background: none;
 }
 
+
 @media (width>900px){
+
+    .lenguages{
+        margin: 300px 0;
+    }
 
     .lenguages .iconsContainer{
         gap: 40px;
@@ -65,8 +64,4 @@
         height: 400px;
     }
 
-    .lenguages h1{
-        font-size: 35px;
-        max-width: 500px;
-    }
 }

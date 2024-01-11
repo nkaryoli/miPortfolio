@@ -7,13 +7,25 @@
     flex-direction: column;
     align-items:center;
     padding: 40px 0 20px 10px;
-    background: none;
+    /* background: url("/src/assets/Ilustration\ bottom.png");
+    background-size: 880px;
+    background-repeat: no-repeat;
+    background-position-y: 89%;
+    background-position-x: 62%; */
 }
 
 .circle{
     border-radius: 50%;
     background: none;
 }
+
+/* .fondo:after{
+    content: url("/src/assets/Ilustration\ bottom.png");
+    position: absolute;
+    top: -440px;
+    left: -450px;
+    opacity: 0.5;
+} */
 
 .circle img{
     position: relative;
@@ -25,6 +37,7 @@
 }
 
 .inner1{
+    border: 1px solid red;
     width: 220px;
     height: 220px;
     position: relative;
@@ -145,4 +158,16 @@
     100%{
         transform: rotate(-360deg);
     }
+}
+
+@media (width>900px){
+    
+.fondo::before{
+    content: url("/src/assets/Ilustration\ bottom.png");
+    position: absolute;
+    top: -440px;
+    left: -530px;
+    opacity: 0.8;
+}
+
 }
