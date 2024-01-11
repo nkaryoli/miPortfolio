@@ -45,7 +45,7 @@
 }
 
 .inner1::before{
-    content: url("/src/assets/ts_Icon.png");
+    content: url("../assets/ts_Icon.png");
     position: absolute;
     left: -10px;
     top: 49px;
@@ -55,7 +55,7 @@
 }
 
 .inner1::after{
-    content: url("/src/assets/js_Icon.png");
+    content: url("../src/assets/js_Icon.png");
     position: absolute;
     left: 100px;
     top: 50px;
@@ -72,7 +72,7 @@
 }
 
 .inner2::before{
-    content: url("/src/assets/jira_Icon.png");
+    content: url("../src/assets/jira_Icon.png");
     position: absolute;
     top: -10px;
     left: 45px;
@@ -82,7 +82,7 @@
 }
 
 .inner2::after{
-    content: url("/src/assets/figma_Icon.png");
+    content: url("../src/assets/figma_Icon.png");
     position: absolute;
     top: 150px;
     left: 95px;
@@ -99,7 +99,7 @@
 }
 
 .outer1::before{
-    content: url("/src/assets/css_Icon.png");
+    content: url("../src/assets/css_Icon.png");
     position: absolute;
     top: 6px;
     left: -95px;
@@ -108,7 +108,7 @@
 }
 
 .outer1::after{
-    content: url("/src/assets/sass_Icon.png");
+    content: url("../src/assets/sass_Icon.png");
     position: absolute;
     top: 13px;
     left: 120px;
@@ -125,7 +125,7 @@
 }
 
 .outer2::before{
-    content: url("/src/assets/html_Icon.png");
+    content: url("../src/assets/html_Icon.png");
     position: absolute;
     top: 71px;
     left: -28px;
@@ -134,7 +134,7 @@
 }
 
 .outer2::after{
-    content: url("/src/assets/github_Icon.png");
+    content: url("../src/assets/github_Icon.png");
     position: absolute;
     top: -90px;
     left: 20px;
