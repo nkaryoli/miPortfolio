@@ -26,7 +26,7 @@ form:hover{
 }
 
 form::after{
-    content: url(/src/assets/astronauta\ \(1\).png);
+    content: url(../assets/astronauta\ \(1\).png);
     position: absolute;
     right: 20%;
     top: 2890px;
@@ -110,7 +110,7 @@ form button:hover{
     }
     
     .formContainer::before{
-        content: url("/src/assets/formBackground\ \(7\).png");
+        content: url("../assets/formBackground\ \(7\).png");
         position: absolute;
         top: -600px;
         right: 0px;
