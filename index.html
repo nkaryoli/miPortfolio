@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>NK's Portfolio</title>
     <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 <body>
@@ -20,9 +20,8 @@
             </ul>
         </nav>
         <div class="redesContainer flex">
-            <img src="src/assets/gitIconCian.png">
-            <img src="src/assets/linkdinIconCian.png">
-            <img src="src/assets/XIconCian.png">
+            <a href="https://github.com/nkaryoli" target="_blank"><img src="src/assets/gitIconCian.png"></a>
+            <a href="https://www.linkedin.com/in/karyoli-nieves/" target="_blank"><img src="src/assets/linkdinIconCian.png"></a>
         </div>
     </header>
     <main id="home">
@@ -41,6 +40,7 @@
             <h1>Hi! I`m <span>Karyoli</span></h1>
             <h2>Web Developer Full Stack</h2>
             <p>Seeking opportunities to improve and grow professionally. Always ready to face new challenges and take exciting web projects to the next level.</p>
+            <button class="cvBtn">Download CV <img src="src/assets/icon_download.png" class="downloadIcon"></button>
         </div>
     </main>
     <section class="projects"  id="projects">
@@ -141,21 +141,22 @@
     </div>
     </section>
     <section class="formContainer" id="contact">
-        <form class="flex">
+        <form class="flex" action="https://formsubmit.co/karyoli.ie@gmail.com" method="POST">
             <h1>Contact me:</h1>
-            <div class="input-wrap">
-                <input class="input-field" id="name" type="text" minlength="4" required>
-                <label id="nameLabel">Name:</label>
+            <div class="input-group">
+
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" minlength="4" placeholder="Name" required>
+
+                <label for="email">Email:</label>
+                <input id="email" name="e-mail" type="text" minlength="11" placeholder="Email example@email.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" cols="0" rows="7" placeholder="Type your message here"></textarea>
+                <button class="formBtn" type="submit">Send</button>
+                <input type="hidden" name="_next" value="https://nkaryoli.github.io/miPortfolio/"/>
+                <input type="hidden" name="_captcha" value="false"/>
             </div>
-            <div class="input-wrap">
-                <input class="input-field" id="e-mail" type="text" minlength="11" required>
-                <label id="emailLabel">E-mail:</label>
-            </div>
-            <div class="message-wrap">
-                <input class="input-field" id="message" type="text" required>
-                <label id="messageLabel">Message:</label>
-            </div>
-            <button type="submit"><span>Send message</span></button>
         </form>
     </section>
     <script type="text/javaScript" src="src/javaScript/particles.min.js"></script>

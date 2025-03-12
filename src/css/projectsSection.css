@@ -34,7 +34,7 @@
     padding: 20px;
     transition: 0.2s;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom right, rgba(26, 4, 74, 0.8), rgba(240,0,142,0.1), rgba(240,0,142,0.2), rgba(240,0,142,0.1), rgba(26, 4, 74, 0.8));
+    background-image: linear-gradient(to bottom right, rgba(26, 4, 74, 0.8), rgba(229, 7, 109, 0.1), rgba(229, 7, 109, 0.2), rgba(229, 7, 109, 0.1), rgba(26, 4, 74, 0.8));
     z-index: 1;
 }
 
