@@ -8,7 +8,7 @@ The color chosen for this project are magenta and cyan, as a way to create a fre
 The disign is simple but dinamyc at the same time, using HTML and CSS for the overall structure of the website as well as some CSS animation and JavaScript for functionalities and animations too.
 
 ## Link
-
+- ![Demo] (https://nkaryoli.github.io/miPortfolio/)
 ## Demo Figma
 
 
