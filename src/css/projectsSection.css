@@ -1,210 +1,159 @@
-
 /*PROJECTS SECTION*/
 
-.projects{
-    display: flex;
-    margin: 100px 0;
-    flex-direction: column;
-    align-items: center;
-    margin: 120px 0;
-}
-
-
-.cardsContainer{
-    background: none;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.row{
+#projects {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    background: none;
-}
-
-.projects h1{
-    margin: 50px 0;
-}
-
-.card{
-    max-width: 340px;
-    padding: 20px;
-    transition: 0.2s;
-    border-radius: 15px;
-    background-image: linear-gradient(to bottom right, rgba(26, 4, 74, 0.8), rgba(229, 7, 109, 0.1), rgba(229, 7, 109, 0.2), rgba(229, 7, 109, 0.1), rgba(26, 4, 74, 0.8));
-    z-index: 1;
-}
-
-/*efecto imagenes */
-
-.card figure{
+    padding-top: 36rem;
+    gap: 4rem;
     position: relative;
-    height: 160px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 9px;
-}
+    z-index: 0;
 
-.card figure img{
-    height: 100%;
-    transition: all 0.5s ease-out;
-}
-
-.card figure .cape{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.card figure:hover > .cape{
-    opacity: 1;
-    visibility: visible;
-}
-
-.card figure:hover > .cape p{
-    margin-top: 45px;
-    margin-bottom: 15px;
-}
-
-.card figure:hover > img{
-    transform: scale(1.05);
-}
-
-.cape p{
-    color: var(--primary-color);
-    font-family: var(--font-family-tertiary);
-    font-size: var(--h2-size);
-    font-weight: 700;
-    background: none;
-    transition: all 0.5s ease-out;
-}
-
-.cape a .img{
-    background: none;
-}
-
-/**/
-
-.card:hover{
-    scale: 1.02;
-    cursor: pointer;
-    box-shadow: 0 0 50px var(--primary-color);
-}
-
-.card .screenShot{
-    width: 100%;
-}
-
-.card div{
-    background: none;
-}
-
-.card div img{
-    height: 20px;
-    margin: 20px 20px 20px 1px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(113, 255, 238, 0.3);
-}
-
-.card h2{
-    color: var(--primary-color);
-    font-family: var(--font-family-primary);
-    font-size: var(--h2-size);
-    background: none;
-}
-
-.card h3{
-    color: var(--secondary-color);
-    font-family: var(--font-family-tertiary);
-    font-size: var(--h3-size);
-    font-weight: 400;
-    background: none;
-}
-
-.card .text{
-    color: var(--text-color);
-    font-family: var(--font-family-secondary);
-    font-size: var(--paragraf-size);
-    margin: 10px 0;
-    background: none;
-}
-
-@media (width>900px){
-
-    .cardsContainer{
-        gap: 50px;
-        align-items: center;
-        position: relative;
-    }
-
-    .cardsContainer::after{
-        content: url("../assets/fondoProjects\ \(6\).png");
+    &::before{
+        content: '';
+        background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.5), transparent, transparent), url('/src/assets/bg-projects2.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 106%;
         position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
     }
 
-    .row{
-        margin-top: 0;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 50px;
+    &::after{
+        content: url("../assets/fondoProjects\ \(6\).png");
+        position: fixed;
+        top: 8rem;
+        z-index: 0;
     }
 
-    .projects h1{
-        margin: 0 0 100px 0;
+    h2 {
+        font-family: var(--font-family-primary);
+        font-size: var(--h2-size);
+        font-weight: bold;
+        color: var(--primary-color);
+        position: fixed;
+        top: 9rem;
     }
 
-    .cardsContainer div:nth-child(1){
-        gap: 14vw;
+    h3 {
+        font-family: var(--font-family-primary);
+        font-size: var(--h3-size);
+        color: var(--text-color);
+        text-shadow: 5px 5px 20px rgba(229, 90, 253, 0.9);
+
     }
 
+    .project-planet-trigger {
+        width: 250px;
+        max-width: none;
+        cursor: pointer;
+        z-index: 101;
+        position: relative;
+        opacity: 0.8;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        animation: glow 4s infinite ease-in-out, float 5s infinite ease-in-out;
+        animation-fill-mode: forwards;
+        border-radius: 50%;
 
-    .card{
-        height: 430px;
+        &:hover {
+            animation-play-state: paused;
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 50px var(--secondary-color));
+            opacity: 1;
+        }
     }
 
-    .card:hover{
-        scale: 1.2;
+    .planetsContainer{
+        gap: 15rem;
+        display: flex;
+        flex-direction: column;
+
     }
 
-    .card h2{
-        font-size: 20px;
+    article.project-card-details {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+        width: 450px;
+        max-width: 90%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(17, 5, 19, 0.5);
+        border: 1px solid var(--primary-color);
+        color: var(--text-color);
+        z-index: 102;
+        pointer-events: none;
+        text-align: left;
+        overflow: hidden;
+        transition: opacity 0.4s ease, transform 0.9s ease;
+
+        h4 {
+            font-size: var(--h3-size);
+            margin-bottom: 0.25rem;
+            color: var(--text-color);
+        }
+
+        h5 {
+            font-size: var(--paragraf-size);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tech-icons img {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+
+        a {
+            width: 100%;
+            height: 50px;
+            backdrop-filter: blur(10px);
+            background: var(--primary-color);
+            color: var(--background-color);
+            font-family: var(--font-family-secondary);
+            font-size: var(--h4-size);
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.01);
+                box-shadow: 0 0 20px rgba(146, 179, 255, 0.5);
+                border-color: rgb(211, 223, 250);
+            }
+
+            svg {
+                
+                margin-left: 5px;
+                height: 100%;
+            }
+        }
     }
 
-    .card h3{
-        font-size: 15px;
-    }
-
-    .card .text{
-        font-size: 16px;
-    }
-
-}
-
-@media (width>1100px){
-
-    .projects h1{
-        margin: 120px 0;
-    }
-
-    .cardsContainer{
-        gap: 90px;
-    }
-
-    .row{
-        gap: 8vw;
-    }
-
-    .cardsContainer div:nth-child(1){
-        gap: 30vw;
+    .project-planet-trigger.in-view:hover + .project-card-details {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        pointer-events: auto;
+        /* Permitir clic */
     }
 
 }
