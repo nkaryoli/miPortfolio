@@ -1,189 +1,145 @@
 /*ABOUTME SECTION*/
 
-main{
-    padding: 0 15px;
-}
-
 /* fondo estrellado fixed */
 
-#bg{
-    position: absolute;
+
+#hero {
+    /* position: sticky; */
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-}
+    min-height: 100vh;
+    z-index: 2;
 
-.aboutMeContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
-    max-width: 350px;
-    gap: 15px;
-    background: none;
-    position: relative;
-}
-
-.aboutMeContainer::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../assets/fondo2\ \(4\).png");
-    background-position: bottom right;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(/src/assets/bg-hero.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    right: 0vw;
-    top: 140px;
-}
+    background-position: center;
+    background-size: cover;
 
-.aboutMeContainer h1{
-    text-align: center;
-    color: var(--text-color);
-    font-family: var(--font-family-primary);
-    font-size: var(--h1-size);
-    background: none;
-}
-
-h1 span{
-    color: transparent;
-    background: linear-gradient(
-        to bottom right,
-        var(--quaternary-color),
-        var(--secondary-color)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.aboutMeContainer h2{
-    max-width: 310px;
-    text-align: center;
-    font-family: var(--font-family-primary);
-    font-size: var(--h1-size);
-    color: transparent;
-    background: linear-gradient(
-        to bottom right,
-        var(--tertiary-color),
-        var(--primary-color)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.aboutMeContainer p{
-    max-width: 480px;
-    color: var(--text-color);
-    font-family: var(--font-family-secondary);
-    font-size: var(--paragraf-size);
-    font-weight: 400;
-    text-align: center;
-    background: none;
-}
-
-.cvBtn{
-    background: var(--secondary-color);
-    color: var(--text-color);
-    font-family: var(--font-family-primary);
-    font-size: var(--h1-size);
-    font-weight: bold;
-    padding: 10px 20px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 100;
-}
-
-.cvBtn:hover{
-    transform: scale(1.05);
-    box-shadow:  0 0 20px rgba(229, 7, 109, 0.8);
-}
-
-.cvBtn:active{
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(229, 7, 109, 0.6);
-}
-
-.downloadIcon{
-    height: 20px;
-}
-
-@media (width>900px){
-
-    main{
+    .profilePic {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 100px;
-        height: 100vh;
         align-items: center;
-    }
-    
-    .aboutMeContainer{
-        max-width: 480px;
-        margin: 0;
-        
-    }
+        margin-top: 2rem;
 
-    .aboutMeContainer::after{
-        top: 250px;
-    }
+        @media (width>900px) {
+            margin-top: 0rem;
 
-    .aboutMeContainer h1{
-        font-size: 30px;
-    }
+        }
 
-    .aboutMeContainer h2{
-        font-size: 40px;
-        max-width: 430px;
-    }
+        div {
+            z-index: 200;
+            display: flex;
+            /* flex-direction: column; */
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
 
-    .aboutMeContainer p{
-        font-size: 18px;
-        max-width: 100%;
-        margin: 10px 0;
-    }
+            svg {
+                width: 30px;
+                height: 30px;
+                color: var(--primary-color);
+                transition: fill 0.3s ease;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                background: none;
 
-}
+                &:hover {
+                    filter: drop-shadow(0 4px 8px rgba(146, 179, 255, 0.7));
+                    transform: scale(1.1);
+                }
+            }
+        }
 
-@media (width>1200px){
-
-    main{
-        gap: 200px;
-    }
-
-    .aboutMeContainer{
-        max-width: 550px;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .aboutMeContainer::after{
-        right: -100px;
-        top: 230px;
-        background-size: 160%;
+
+    h1 {
+        color: var(--text-color);
+        font-family: var(--font-family-primary);
+        font-size: var(--h4-size);
+        background: none;
+
+        @media (width>600px) {
+            & {
+                font-size: var(--h3-size);
+            }
+        }
+
+        @media (width>1300px) {
+            & {
+                font-size: var(--h2-size);
+            }
+        }
     }
 
-    .aboutMeContainer h1{
-        font-size: 40px;
+    h2 {
+        text-align: center;
+        font-family: var(--font-family-primary);
+        font-size: var(--h3-size);
+        color: var(--primary-color);
+        font-weight: 900;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        @media (width>600px) {
+            & {
+                font-size: var(--h2-size);
+            }
+        }
+
+        @media (width>1300px) {
+            & {
+                font-size: var(--h1-size);
+            }
+        }
     }
 
-    .aboutMeContainer h2{
-        font-size: 50px;
+    p {
+        color: var(--text-light-color);
+        font-family: var(--font-family-secondary);
+        font-size: var(--paragraf-size);
+        font-weight: 400;
+        margin-top: 1.5rem;
     }
 
-    .aboutMeContainer p{
-        font-size: 22px;
-    }
-}
+    a {
+        width: 300px;
+        height: 50px;
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        font-family: var(--font-family-secondary);
+        font-size: var(--h4-size);
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        z-index: 100;
 
-@media (width>1480px){
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 20px rgba(146, 179, 255, 0.5);
+            border-color: rgb(211, 223, 250);
+        }
 
-    .aboutMeContainer::after{
-        right: -250px;
+        &:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(229, 7, 109, 0.6);
+        }
+
+        svg {
+            
+            margin-left: 5px;
+            height: 100%;
+        }
     }
 }
