@@ -4,12 +4,12 @@
 :root{
     --primary-color: rgb(146, 179, 255);
     --secondary-color: rgb(50, 10, 107);
-    --tertiary-color: #E55AFD;
+    --tertiary-color: rgb(229, 90, 253);
     --text-color: #ffffff;
     --text-light-color: #d6d3d3;
     --background-color: rgb(17, 5, 19);
-    --font-family-primary: 'orbitron', sans-serif;
-    --font-family-secondary: 'quantico', sans-serif;
+    --font-family-primary: 'quantico', sans-serif;
+    --font-family-secondary: 'orbitron', sans-serif;
     --font-family-tertiary: 'michroma', sans-serif;
     --h1-size: 2.9rem;
     --h2-size: 2.45rem;
@@ -52,7 +52,7 @@ main{
     position: fixed;
     inset: 0;
 pointer-events: none;
-    z-index: 0;
+    z-index: 100;
 }
 /* 
 .flex{
