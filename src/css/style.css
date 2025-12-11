@@ -3,10 +3,10 @@
 
 :root{
     --primary-color: rgb(146, 179, 255);
-    --secondary-color: rgb(50, 10, 107);
-    --tertiary-color: rgb(229, 90, 253);
+    --secondary-color: rgb(85, 2, 78);
+    --tertiary-color: rgb(255, 167, 95);
     --text-color: #ffffff;
-    --text-light-color: #d6d3d3;
+    --text-light-color: #d6d3d3e7;
     --background-color: rgb(17, 5, 19);
     --font-family-primary: 'quantico', sans-serif;
     --font-family-secondary: 'orbitron', sans-serif;
