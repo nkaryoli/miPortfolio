@@ -8,7 +8,7 @@
     padding-top: 6rem;
     gap: 2rem;
     position: relative;
-    z-index: 0;
+
 
     &::before {
         content: '';
@@ -24,29 +24,23 @@
         pointer-events: none;
     }
 
-    @media (width>900px)  {
+    @media (width>900px) {
         gap: 4rem;
         padding-top: 16rem;
 
-            &::before {
-                content: '';
-                background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.5), transparent 20%), url('/src/assets/backgrounds/bg-projects-rocks.png');
-                background-position: top left;
-                background-size: 106%;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100vh;
-                z-index: 999;
-                pointer-events: none;
-            }
+        &::before {
+            background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.5), transparent 20%), url('/src/assets/backgrounds/bg-projects-rocks.png');
+            background-position: top left;
+            background-size: 106%;
+        }
 
         &::after {
             content: url("../assets/backgrounds/bg-projects-astronauta.png");
             position: fixed;
             top: 8rem;
-            z-index: 0;
+            z-index: -10;
         }
+
         h2 {
             position: fixed;
             z-index: ;
@@ -60,6 +54,35 @@
         color: var(--primary-color);
         top: 9rem;
     }
+
+    .projects-wrapper {
+        margin-bottom: 12rem;
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(to bottom, transparent, rgba(17, 5, 19, 0.3) 80%, rgba(17, 5, 19) 95%), url('/src/assets/backgrounds/bg-projects-rocks2.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: 105%;
+            position: absolute;
+            inset: 0;
+            top: 80%;
+            width: 100%;
+            height: 50vh;
+            z-index: 101;
+            pointer-events: none;
+        }
+        
+        @media (width>900) {
+
+            &::before {
+                background-image: linear-gradient(to bottom, transparent, rgba(17, 5, 19, 0.3) 80%, rgba(17, 5, 19) 90%), url('/src/assets/backgrounds/bg-projects-rocks2.png');
+                top: 60%;
+            }
+            
+        }
+    }
+
 
     article.project-card-details {
         width: 350px;
