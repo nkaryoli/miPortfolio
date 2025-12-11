@@ -38,7 +38,7 @@
     <main>
         <section id="hero" class="container-fluid row align-items-center justify-content-center">
 
-            <div class="profilePic col-4">
+            <div class="profilePic col-12 col-lg-4">
                 <img src="src/assets/fotoPerfil2.png" class="profilePic">
                 <div class="rrss">
                     <p>Contact me: </p>
@@ -58,7 +58,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-5 align-items-center justify-content-center text-center">
+            <div class="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center text-center">
                 <h1>Hi! I`m Karyoli</h1>
                 <h2>Web Developer FullStack</h2>
                 <p>Seeking opportunities to improve and grow professionally. Always ready to face new challenges and
@@ -74,128 +74,85 @@
             </div>
         </section>
 
-        <section class="portfolio-section" id="projects">
+        <section id="projects">
             <div id="bg"></div>
 
-            <h2 class="text-center mb-5">My Projects</h2>
+            <h2>My Projects</h2>
 
-            <div class="container-lg planetsContainer">
+            <div class="container-xl">
 
-                <div class="row d-flex justify-content-between mb-5">
+                <div class="row d-flex justify-content-between">
+                    <article class="card p-0 project-card-details">
 
-                    <div class="col-4 position-relative mt-5 pt-5">
-                        <h3>QR Code Scanner</h3>
+                        <figure class="card-img-top mb-0 p-3 pb-0">
+                            <img class="img-fluid" src="./src/assets/projects/green-demo.png" class="screenShot">
+                        </figure>
 
-                        <img class="project-planet-trigger" src="/src/assets/planets/p1.png"
-                            alt="Planet - QR Code Scanner"
-                            data-short-desc="QR Code Scanner: Aplicación Full-Stack para generar y escanear códigos QR, destacando UI/UX responsivo y animaciones fluidas.">
+                        <div class="card-body">
+                            <h3>GreenDev</h3>
+                            <h4>Sustainable Development Hub</h4>
+                            <p>A platform built to drive sustainable development via educational content and community
+                                networking. Independently developed, featuring a responsive UI/UX design with smooth
+                                animations and robust backend functionality.</p>
+                        </div>
 
-                        <article class="card project-card-details ">
-                            <figure class="card-img-top">
-                                <img src="./src/assets/qr_expample.png" alt="Screenshot QR Code Scanner"
-                                    class="img-fluid screenshot">
-                            </figure>
-                            <div class="card-body p-4">
-                                <!-- <div class="tech-icons mb-3">
-                                    <img src="./src/assets/htmlColorIcon.png" alt="HTML Icon">
-                                    <img src="./src/assets/csssColorIcon.png" alt="CSS Icon">
-                                    <img src="./src/assets/jsColorIcon.png" alt="JavaScript Icon">
-                                </div> -->
-                                <h4 class="card-title">GreenDev – Sustainable Development Hub</h4>
-                                <h5>QR code generator and scanner</h5>
-                                <p class="project-description">I developed the complete application independently,
-                                    implementing
-                                    responsive UI/UX design with smooth animations and robust backend functionality. The
-                                    platform enables users to explore sustainability topics...</p>
-                                <a href="https://qr-code-scanner-jet.vercel.app/" target="_blank"
-                                    class="projectBtn mt-2"><i class="fa fa-eye"></i> View Project</a>
-                            </div>
-                        </article>
-                    </div>
+                    </article>
 
-                    <div class="col-4 d-flex flex-column align-items-end position-relative">
-                        <h3 class="project-title-secondary">Backend Marketplace</h3>
-                        <img class="project-planet-trigger" src="/src/assets/planets/p2.png"
-                            alt="Planet - Backend Marketplace"
-                            data-short-desc="Backend Marketplace: API RESTful diseñada para un mercado de servicios de mudanza (Back-End con Node.js/Express).">
+                    <article class="card p-0 project-card-details">
 
-                        <article class="card project-card-details">
-                            <figure class="mb-3">
-                                <img src="./src/assets/bakend.webp" alt="Screenshot Backend Marketplace"
-                                    class="img-fluid screenshot">
-                            </figure>
-                            <div class="card-body p-4">
-                            <div class="tech-icons mb-3">
-                                <img src="./src/assets/htmlColorIcon.png" alt="HTML Icon">
-                                <img src="./src/assets/csssColorIcon.png" alt="CSS Icon">
-                            </div>
-                            <h4>Backend Marketplace</h4>
-                            <h5>Backend for a service marketplace.</h5>
-                            <p class="project-description">Specifically, it is designed for a moving service. Drivers
-                                can
-                                list their availability, and users can book based on their needs.</p>
-                            <a href="https://github.com/nkaryoli/backend-marketplace" target="_blank"
-                                class="btn btn-primary mt-2"><i class="fa fa-eye"></i> View Code</a></div>
-                        </article>
-                    </div>
+                        <figure class="card-img-top mb-0 p-3 pb-0">
+                            <img class="img-fluid" src="./src/assets/projects/nk-demo.png" class="screenShot">
+                        </figure>
+
+                        <div class="card-body">
+                            <h3>Nk-QrCode</h3>
+                            <h4>Qr code generator and personalization</h4>
+                            <p>A modern QR code generator and customizer built with React, TypeScript, and Tailwind CSS.
+                                Create beautiful and functional QR codes for links, text, contacts, or any custom data —
+                                all with live preview and export options.</p>
+                        </div>
+
+                    </article>
                 </div>
 
-                <div class="row d-flex justify-content-center mt-5 gap-5">
-                    <div class="col-4 position-relative">
-                        <h3 class="project-title-secondary">FemCodersClub App</h3>
-                        <img class="project-planet-trigger" src="/src/assets/planets/p3.png"
-                            alt="Planet - FemCodersClub App"
-                            data-short-desc="FemCodersClub App: Plataforma para la gestión de miembros y eventos de una asociación de coders.">
+                <div class="row d-flex justify-content-around">
+                    <article class="card p-0 project-card-details">
 
-                        <article class="project-card-details">
-                            <figure class="mb-3">
-                                <img src="./src/assets/femCoders.png" alt="Screenshot FemCodersClub App"
-                                    class="img-fluid screenshot">
-                            </figure>
-                            <div class="card-body p-4">
-                            <div class="tech-icons mb-3">
-                                <img src="./src/assets/htmlColorIcon.png" alt="HTML Icon">
-                                <img src="./src/assets/csssColorIcon.png" alt="CSS Icon">
-                            </div>
-                            <h4>FemCodersClub App</h4>
-                            <h5>Web app for FemCoders Club</h5>
-                            <p class="project-description">Platform designed to streamline the management of members,
-                                and
-                                events within the FemCodersClub association. Enabling efficient registration and
-                                attendance
-                                tracking for events.</p>
-                            <a href="https://github.com/RuthDanielaAguirre/femCodersClub_Project" target="_blank"
-                                class="btn btn-primary mt-2"><i class="fa fa-eye"></i> View Code</a></div>
-                        </article>
-                    </div>
+                        <figure class="card-img-top mb-0 p-3 pb-0">
+                            <img class="img-fluid" src="./src/assets/projects/qraft-demo.png" class="screenShot">
+                        </figure>
 
-                    <div class="col-4 d-flex flex-column align-items-end position-relative mt-5 pt-5">
-                        <h3 class="project-title-secondary">Move Mate</h3>
-                        <img class="project-planet-trigger" src="/src/assets/planets/p4.png" alt="Planet - Move Mate"
-                            data-short-desc="Move Mate: Aplicación para simplificar el proceso de mudanzas, gestión de inventario y coordinación de servicios.">
+                        <div class="card-body">
+                            <h3>Qraft</h3>
+                            <h4>Digital identity & Qr Badge Platform</h4>
+                            <p>Midudev Hackathon project: A full-stack solution for digital identity management using
+                                custom QR badge generation for organizations. Independently built with Clerk (Auth) and
+                                Supabase/RLS (Secure Data), enabling organizations to manage teams and distribute
+                                digital IDs via a responsive dashboard.</p>
+                        </div>
 
-                        <article class="project-card-details">
-                            <figure class="mb-3">
-                                <img src="./src/assets/moveMate.png" alt="Screenshot Move Mate"
-                                    class="img-fluid screenshot">
-                            </figure>
-                            <div class="card-body p-4">
-                            <div class="tech-icons mb-3">
-                                <img src="./src/assets/htmlColorIcon.png" alt="HTML Icon">
-                                <img src="./src/assets/csssColorIcon.png" alt="CSS Icon">
-                            </div>
-                            <h4>Move Mate</h4>
-                            <h5>Moving service application</h5>
-                            <p class="project-description">Move Mate is an application designed to simplify the moving
-                                process, providing users with a comprehensive platform to plan, coordinate, and execute
-                                their moves efficiently.</p>
-                            <a href="https://github.com/nkaryoli/mudapp-front-survivors" target="_blank"
-                                class="btn btn-primary mt-2"><i class="fa fa-eye"></i> View Code</a></div>
-                        </article>
-                    </div>
+                    </article>
+
+                    <article class="card p-0 project-card-details">
+
+                        <figure class="card-img-top mb-0 p-3 pb-0">
+                            <img class="img-fluid" src="./src/assets/projects/school-demo.png" class="screenShot">
+                        </figure>
+
+                        <div class="card-body">
+                            <h3>Mussic Kids</h3>
+                            <h4>Interactive Online Music School</h4>
+                            <p>A fully self-developed interactive web application that simulates virtual musical
+                                instruments playable via keyboard and mouse. Inspired by a bootcamp concept, I rebuilt
+                                the app independently using Vanilla JavaScript (HTML/CSS), focusing on custom DOM
+                                manipulation and audio playback logic.</p>
+                        </div>
+
+                    </article>
                 </div>
             </div>
         </section>
+
         <!-- 
     <section class="lenguages flex" id="skills">
         <h1>My Skills</h1>
@@ -250,7 +207,7 @@
     <script type="text/javaScript" src="src/javaScript/background.js"></script>
     <script src="src/javaScript/index.js"></script>
     <script src="src/javaScript/header.js"></script>
-    <script src="src/javaScript/observer.js"></script>
+    <!-- <script src="src/javaScript/observer.js"></script> -->
 </body>
 
 </html>
