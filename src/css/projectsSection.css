@@ -5,17 +5,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 16rem;
-    gap: 4rem;
+    padding-top: 6rem;
+    gap: 2rem;
     position: relative;
     z-index: 0;
 
     &::before {
         content: '';
-        background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.5), transparent, transparent), url('/src/assets/backgrounds/bg-projects-rocks.png');
+        background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.4), transparent 10%), url('/src/assets/backgrounds/bg-projects-rocks.png');
         background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 106%;
+        background-position: top center;
+        background-size: cover;
         position: absolute;
         top: 0;
         width: 100%;
@@ -24,11 +24,33 @@
         pointer-events: none;
     }
 
-    &::after {
-        content: url("../assets/backgrounds/bg-projects-astronauta.png");
-        position: fixed;
-        top: 8rem;
-        z-index: 0;
+    @media (width>900px)  {
+        gap: 4rem;
+        padding-top: 16rem;
+
+            &::before {
+                content: '';
+                background-image: linear-gradient(to bottom, rgba(17, 5, 19, 0.5), transparent 20%), url('/src/assets/backgrounds/bg-projects-rocks.png');
+                background-position: top left;
+                background-size: 106%;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 999;
+                pointer-events: none;
+            }
+
+        &::after {
+            content: url("../assets/backgrounds/bg-projects-astronauta.png");
+            position: fixed;
+            top: 8rem;
+            z-index: 0;
+        }
+        h2 {
+            position: fixed;
+            z-index: ;
+        }
     }
 
     h2 {
@@ -36,7 +58,6 @@
         font-size: var(--h2-size);
         font-weight: bold;
         color: var(--primary-color);
-        position: fixed;
         top: 9rem;
     }
 
@@ -48,7 +69,7 @@
         box-shadow: 0px 0px 25px rgba(146, 179, 255, 0.415);
         overflow: hidden;
         z-index: 3;
-        margin-top: 9rem;
+        margin-top: 2rem;
         border: 2px solid rgba(146, 179, 255, 0.8);
         transition: all 0.3s ease-in-out;
 
@@ -60,6 +81,10 @@
                 transform: scale(1.15) translateY(-5px);
                 opacity: 1;
             }
+        }
+
+        @media (width>1300px) {
+            margin-top: 9rem;
         }
 
         img {
@@ -101,7 +126,7 @@
     .view-details-btn {
         width: 100%;
         background: none;
-        border: none; 
+        border: none;
         border-radius: 4px;
         color: var(--primary-color);
         font-family: var(--font-family-secondary);
@@ -112,7 +137,7 @@
         transition: all 0.3s ease;
         display: flex;
         align-items: center;
-        justify-content:  end;
+        justify-content: end;
         gap: 0.5rem;
         margin-bottom: 0.5rem;
 
@@ -157,10 +182,11 @@
     background: linear-gradient(155deg, var(--background-color) 40%, rgba(85, 2, 78, 0.5), var(--background-color));
     border: 1px solid var(--primary-color);
     border-radius: 8px;
-    max-width: 900px;
+    max-width: 800px;
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     animation: slideUp 0.4s ease;
     box-shadow: 0 0 50px rgba(146, 179, 255, 0.6);
@@ -206,7 +232,7 @@
 
     &:hover {
         color: var(--tertiary-color);
-        transform: rotate(180deg) ;
+        transform: rotate(180deg);
     }
 }
 
@@ -217,7 +243,7 @@
 .modal-image {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 1.5rem;
