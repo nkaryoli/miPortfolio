@@ -56,30 +56,29 @@
     }
 
     .projects-wrapper {
-        margin-bottom: 12rem;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 20rem;
+        position: relative;
+        overflow: hidden;
 
         &::before {
             content: '';
-            background-image: linear-gradient(to bottom, transparent, rgba(17, 5, 19, 0.3) 80%, rgba(17, 5, 19) 95%), url('/src/assets/backgrounds/bg-projects-rocks2.png');
+            background-image: linear-gradient(to bottom, transparent, rgba(17, 5, 19, 0.5) 80%, rgba(17, 5, 19) 95%), url('/src/assets/backgrounds/bg-projects-rocks2.png');
             background-repeat: no-repeat;
             background-position: right bottom;
             background-size: 105%;
             position: absolute;
-            inset: 0;
-            top: 80%;
-            width: 100%;
+            bottom: -5px;
+            width: 105%;
             height: 50vh;
+            left: -3%;
             z-index: 101;
             pointer-events: none;
         }
-        
-        @media (width>900) {
 
-            &::before {
-                background-image: linear-gradient(to bottom, transparent, rgba(17, 5, 19, 0.3) 80%, rgba(17, 5, 19) 90%), url('/src/assets/backgrounds/bg-projects-rocks2.png');
-                top: 60%;
-            }
-            
+        @media (max-width: 768px) {
+            padding-bottom: 9rem;
         }
     }
 
@@ -87,18 +86,19 @@
     article.project-card-details {
         width: 350px;
         height: fit-content;
-        background: linear-gradient(155deg, var(--card-color) 10%, rgb(17, 5, 19) 70%);
+        background: linear-gradient(155deg, rgb(85, 2, 78), rgb(17, 5, 19) 40%);
         color: var(--text-color);
-        box-shadow: 0px 0px 25px rgba(146, 179, 255, 0.415);
+        box-shadow: 0 4px 30px rgba(146, 179, 255, 0.2);
         overflow: hidden;
-        z-index: 3;
+        z-index: 102;
         margin-top: 2rem;
-        border: 2px solid rgba(146, 179, 255, 0.8);
+        border: 2px solid rgba(146, 179, 255, 0.3);
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            box-shadow: 0px 0px 40px rgba(146, 179, 255, 0.9);
-            border: 2px solid rgba(146, 179, 255);
+            box-shadow: 0px 0px 40px rgba(146, 179, 255, 0.4);
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
 
             & img {
                 transform: scale(1.15) translateY(-5px);
@@ -123,7 +123,7 @@
             font-size: var(--h4-size);
             letter-spacing: 2px;
             margin-bottom: 0.5rem;
-            color: var(--primary-color);
+            color: var(--tertiary-color);
         }
 
         h4 {
@@ -202,7 +202,7 @@
 }
 
 .modal-content {
-    background: linear-gradient(155deg, var(--background-color) 40%, rgba(85, 2, 78, 0.5), var(--background-color));
+    background: linear-gradient(155deg, rgba(85, 2, 78), var(--background-color) 40%);
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     max-width: 800px;
