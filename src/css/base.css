@@ -1,6 +1,5 @@
 @import "./header.css";
-@import "./animacionMain.css";
+@import "./heroSection.css"
 @import "./projectsSection.css";
-@import "./tecnologiesSec.css";
-@import "./formSec.css";
-@import "./hero.css"
+@import "./tecnologiesSection.css";
+@import "./contactSection.css";
