@@ -4,6 +4,7 @@ header{
     /* position: sticky; */
     /* padding: 0 20px 0 5px; */
     width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-family-secondary);
@@ -34,7 +35,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: var(--h3-size);
+    font-size: var(--paragraf-size);
     background: none;
 }
 
@@ -153,7 +154,7 @@ nav ul li:hover{
     }
 
     nav ul li a{
-        font-size: var(--h2-size);
+        font-size: var(--paragraf-size);
         /* border-bottom: 1px solid var(--secondary-color); */
     }
 
@@ -184,7 +185,7 @@ nav ul li:hover{
     }
 
     nav ul li a{
-        font-size: var(--h1-size);
+        font-size: var(--paragraf-size);
     }
 
     header .redesContainer img{
