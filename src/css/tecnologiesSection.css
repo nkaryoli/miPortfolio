@@ -211,6 +211,9 @@
 /* Responsive */
 @media (max-width: 768px) {
 
+    #skills {
+        padding: 3rem 1rem;
+    }
 
     #skills h2 {
         font-size: 2rem;
