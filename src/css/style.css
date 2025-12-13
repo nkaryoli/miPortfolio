@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@700;800;900&family=Quantico:wght@400;700&display=swap');
 @import "./base.css";
 
-:root{
+:root {
     --primary-color: rgb(146, 179, 255);
     --secondary-color: rgb(85, 2, 78);
     --tertiary-color: rgb(255, 167, 95);
@@ -19,26 +19,27 @@
     --paragraf-size: 1rem;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-section[id]{
+section[id] {
     scroll-margin-top: 120px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color:var(--background-color);
+    background-color: var(--background-color);
     overflow-x: hidden;
+    position: relative;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +55,7 @@ main{
     pointer-events: none;
     z-index: 1;
 }
+
 /* 
 .flex{
     display:flex;
