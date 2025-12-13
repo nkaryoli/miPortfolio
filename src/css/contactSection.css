@@ -1,7 +1,7 @@
 /* FORM SECTION*/
 
 #contact {
-    padding: 6rem 1rem;
+    padding: 6rem 1rem 6rem 1rem;
     width: 100%;
     position: relative;
     background-image: linear-gradient(to bottom, rgba(17, 5, 19), rgba(17, 5, 19), rgba(0, 0, 0, 0.7)), url(/src/assets/backgrounds/bg-contact.png);
@@ -35,7 +35,7 @@
 
 /* Contact Info Card */
 .contact-info {
-    backdrop-filter: blur(10px);
+    z-index: 2;
 
     h3 {
         font-family: var(--font-family-secondary);
@@ -53,6 +53,7 @@
 
     .contact-methods {
         a {
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(146, 179, 255, 0.2);
             background: rgba(146, 179, 255, 0.05);
             transition: all 0.3s ease;
@@ -110,9 +111,11 @@
     backdrop-filter: blur(10px);
     border: 2px solid rgba(146, 179, 255, 0.3);
     padding: 2.5rem;
+    margin-bottom: 6rem;
     box-shadow: 0 4px 30px rgba(146, 179, 255, 0.2);
     transition: all 0.4s ease;
     backdrop-filter: blur(15px);
+    z-index: 2;
 
     &:hover {
         border-color: var(--primary-color);
