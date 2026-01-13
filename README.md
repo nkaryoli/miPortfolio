@@ -8,6 +8,8 @@ Welcome to my personal portfolio repository! This website is designed to showcas
   <img src="src/assets/mobile-demo.png" alt="Mobile Preview" width="14%" />
 </p>
 
+**Live Demo** [Karyoli`s portfolio](https://nkaryoli.github.io/miPortfolio/)
+
 ## 🚀 Overview
 
 This single-page application (SPA) serves as my digital business card and project showcase. It is built with a focus on clean aesthetics, performance, and intuitive navigation.
