@@ -25,13 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
+            if (current && link.getAttribute('href').includes(current)) {
                 link.classList.add('active');
             }
         });
     }
 
-    window.addEventListener('scroll', changeActiveLink);
-    // Call it once on load to set initial state
-    changeActiveLink();
+    if (sections.length > 0) {
+        window.addEventListener('scroll', changeActiveLink);
+        // Call it once on load to set initial state
+        changeActiveLink();
+    }
 });
