@@ -47,40 +47,9 @@ main {
     /* gap: 100px; */
 }
 
-
-
 #bg {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 1;
 }
-
-/* 
-.flex{
-    display:flex;
-}
-
-h1{
-    color: transparent;
-    background: linear-gradient(
-        to bottom right,
-        var(--secondary-color),
-        var(--primary-color),
-        var(--tertiary-color)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-family: var(--font-family-primary);
-    font-weight: 800;
-    text-align: center;
-    font-size: var(--h1-size);
-    z-index: 1;
-}
-
-@media (width>900px){
-
-    h1{
-        font-size: 50px;
-    }
-} */
