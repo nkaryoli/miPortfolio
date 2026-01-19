@@ -37,14 +37,11 @@
         &::after {
             content: url("../assets/backgrounds/bg-projects-astronauta.png");
             position: fixed;
-            top: 8rem;
-            z-index: -10;
+            top: 10rem;
+            z-index: -12;
         }
 
-        h2 {
-            position: fixed;
-            z-index: ;
-        }
+
     }
 
     h2 {
@@ -142,6 +139,42 @@
             font-weight: 400;
             /* margin-bottom: 0; */
             color: var(--text-light-color);
+        }
+    }
+
+    .view-projects-btn {
+        padding: 0.7rem 2rem;
+        background: linear-gradient(135deg, var(--primary-color), var(--tertiary-color));
+        color: var(--background-color);
+        font-family: var(--font-family-secondary);
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 4px;
+        border: 1px solid var(--primary-color);
+
+        &:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color), var(--tertiary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(146, 179, 255, 0.5);
+
+            svg {
+                transform: translateX(5px);
+            }
+        }
+
+        &:active {
+            transform: translateY(-1px);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
         }
     }
 
@@ -409,4 +442,26 @@
     100% {
         transform: translateY(-10px);
     }
+}
+
+.projects-header {
+    position: sticky;
+    top: 4.5rem;
+    /* Altura ajustada para no chocar con el navbar */
+    z-index: 200;
+    background: linear-gradient(135deg, rgba(17, 5, 19, 0.85), rgba(17, 5, 19, 0.5), rgba(17, 5, 19, 0.85));
+    /* Fondo semitransparente oscuro */
+    backdrop-filter: blur(10px);
+    /* Efecto cristal */
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: 1px solid rgba(146, 179, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.projects-header h2 {
+    margin: 0;
+    position: static;
+    /* Reseteamos cualquier posición relativa/absoluta previa */
 }
