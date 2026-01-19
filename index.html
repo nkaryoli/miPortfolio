@@ -96,7 +96,8 @@
 
         <section id="projects">
 
-            <div class="container-xl projects-header d-flex flex-column gap-4 flex-md-row justify-content-between align-items-center">
+            <div
+                class="container-xl projects-header d-flex flex-column gap-4 flex-md-row justify-content-between align-items-center reveal-on-scroll">
                 <h2>My Projects</h2>
                 <a href="./src/pages/projects.html" class="view-projects-btn">All Projects</a>
             </div>
@@ -105,7 +106,7 @@
             <div class="projects-wrapper">
                 <div class="container-xl">
                     <div class="row d-flex justify-content-around justify-content-lg-between gap-3 px-3">
-                        <article class="card p-0 project-card-details" data-project="greendev">
+                        <article class="card p-0 project-card-details reveal-on-scroll" data-project="greendev">
 
                             <figure class="card-img-top mb-0 p-3 pb-0">
                                 <img class="img-fluid" src="./src/assets/projects/green-demo.png" class="screenShot">
@@ -130,7 +131,7 @@
 
                         </article>
 
-                        <article class="card p-0 project-card-details" data-project="nkqrcode">
+                        <article class="card p-0 project-card-details reveal-on-scroll" data-project="nkqrcode">
 
                             <figure class="card-img-top mb-0 p-3 pb-0">
                                 <img class="img-fluid" src="./src/assets/projects/nk-demo.png" class="screenShot">
@@ -155,7 +156,7 @@
                     </div>
 
                     <div class="row d-flex justify-content-around gap-3 px-3">
-                        <article class="card p-0 project-card-details" data-project="qraft">
+                        <article class="card p-0 project-card-details reveal-on-scroll" data-project="qraft">
 
                             <figure class="card-img-top mb-0 p-3 pb-0">
                                 <img class="img-fluid" src="./src/assets/projects/qraft-demo.png" class="screenShot">
@@ -180,7 +181,7 @@
 
                         </article>
 
-                        <article class="card p-0 project-card-details" data-project="mussickids">
+                        <article class="card p-0 project-card-details reveal-on-scroll" data-project="mussickids">
 
                             <figure class="card-img-top mb-0 p-3 pb-0">
                                 <img class="img-fluid" src="./src/assets/projects/school-demo.png" class="screenShot">
@@ -236,12 +237,12 @@
 
         <section id="skills">
             <div class="container">
-                <h2>My Skills</h2>
+                <h2 class="reveal-on-scroll">My Skills</h2>
 
                 <div class="row g-3">
                     <!-- Frontend Development - Large Card -->
                     <div class="col-12 col-lg-8">
-                        <div class="bento-card large">
+                        <div class="bento-card large reveal-on-scroll">
                             <h3>Frontend Development</h3>
                             <p>Building modern, responsive, and interactive user interfaces with cutting-edge
                                 technologies.</p>
@@ -305,7 +306,7 @@
 
                     <!-- Stats Card -->
                     <div class="col-12 col-lg-4">
-                        <div class="bento-card medium glow">
+                        <div class="bento-card medium glow reveal-on-scroll">
                             <h3>Experience</h3>
                             <div class="stats-grid">
                                 <div class="stat-item">
@@ -330,7 +331,7 @@
 
                     <!-- Backend Development -->
                     <div class="col-12  col-lg-6">
-                        <div class="bento-card medium">
+                        <div class="bento-card medium reveal-on-scroll">
                             <h3>Backend</h3>
                             <p>Server-side development with Node.js and database management.</p>
 
@@ -381,7 +382,7 @@
 
                     <!-- Tools & Technologies -->
                     <div class="col-12 col-lg-6">
-                        <div class="bento-card medium">
+                        <div class="bento-card medium reveal-on-scroll">
                             <h3>Tools</h3>
                             <p>Development environment and version control tools I use daily.</p>
 
@@ -430,7 +431,7 @@
 
         <section id="contact">
             <div class="container">
-                <div class="contact-header">
+                <div class="contact-header reveal-on-scroll">
                     <h2>Let's Work Together</h2>
                     <p>Have a project in mind or just want to chat? I'd love to hear from you. Fill out the form or
                         reach out through any of the contact methods below.</p>
@@ -438,7 +439,7 @@
 
                 <div class="row gap-5">
                     <!-- Contact Info -->
-                    <div class="contact-info col-12 col-lg-5 p-0">
+                    <div class="contact-info col-12 col-lg-5 p-0 reveal-on-scroll">
                         <h3>Get in Touch</h3>
                         <p class="mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to
                             be part of your vision.</p>
@@ -498,7 +499,7 @@
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="contact-form-card col-12 col-lg-6 rounded-3 ">
+                    <div class="contact-form-card col-12 col-lg-6 rounded-3 reveal-on-scroll">
                         <form action="https://formsubmit.co/karyoli.ie@gmail.com" method="POST">
                             <div class="form-group">
                                 <label for="name">Name <span>*</span></label>
@@ -559,6 +560,7 @@
     </footer>
     <script type="text/javaScript" src="src/javaScript/particles.min.js"></script>
     <script type="text/javaScript" src="src/javaScript/background.js"></script>
+    <script src="src/javaScript/scrollReveal.js"></script>
     <script src="src/javaScript/index.js"></script>
     <script src="src/javaScript/navbar.js"></script>
     <script src="src/javaScript/projects.js"></script>
