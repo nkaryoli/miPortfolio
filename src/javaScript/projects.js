@@ -12,7 +12,7 @@ const projectsData = {
 		title: "Nk-QrCode",
 		subtitle: "QR Code Generator and Personalization",
 		description: "A modern and intuitive QR code generator built with cutting-edge technologies. Features include real-time preview, multiple customization options (colors, logos, patterns), export in various formats, and a clean, user-friendly interface. Perfect for creating branded QR codes for marketing, events, or personal use.",
-		image: "/src/assets/projects/nk-demo.png",
+		image: "./src/assets/projects/nk-demo.png",
 		tech: ["React", "TypeScript", "Tailwind CSS", "QRCode.js", "Vite"],
 		liveUrl: "https://nk-qr-code.vercel.app/",
 		githubUrl: "https://github.com/nkaryoli/nk_qrCode/tree/dev"
@@ -59,8 +59,8 @@ const projectsData = {
 		description: "Midnight Thief is a 2D desktop game fully designed and developed by me using Java, with a strong focus on Object-Oriented Programming (OOP) principles. The project was conceived as a complete game experience, from core mechanics and logic to visual identity. The game architecture is based on clean class hierarchies, encapsulation, and separation of responsibilities, allowing entities such as the player, enemies, levels, and game states to interact in a structured and scalable way. This approach makes the codebase easier to extend and maintain. In addition to the programming aspect, all visual assets were created by me using AI tools, reinforcing the creative direction of the project and giving it a unique atmosphere aligned with the game’s theme.",
 		image: "/src/assets/projects/midnight-demo.png",
 		tech: ["Java", "Object-Oriented Programming", "Custom AI", "Desktop Game"],
-		liveUrl: "https://github.com/nkaryoli/Midnight_Thief",
-		githubUrl: "https://github.com/nkaryoli/Midnight_Thief"
+		liveUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game",
+		githubUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game"
 	},
 	femcodersclub: {
 		title: "FemCodersClub",
@@ -68,8 +68,8 @@ const projectsData = {
 		description: "FemCodersClub is a collaborative full-stack web application developed as part of the FemCodersClub community project. The app was designed to manage members, volunteers, sponsorships and community events, providing a complete admin experience and an intuitive user interface for event participation and attendance tracking. The project was developed using modern web technologies — React (Front-end), TypeScript, Nest.js (Back-end), and a SQL database — demonstrating a professional full-stack architecture supported by an API documented with Swagger. It was built within a team environment using Scrum methodology, where I served as Scrum Master and Developer, coordinating tasks, planning sprints and contributing to both front-end and back-end development.",
 		image: "/src/assets/projects/femcodersclub-demo.png",
 		tech: ["React", "TypeScript", "Nest.js", "SQL", "Responsive Design"],
-		liveUrl: "https://github.com/nkaryoli/FemCodersClub",
-		githubUrl: "https://github.com/nkaryoli/FemCodersClub"
+		liveUrl: "https://www.femcodersclub.com/",
+		githubUrl: "https://github.com/nkaryoli/femCodersClub_Project"
 	}
 };
 
