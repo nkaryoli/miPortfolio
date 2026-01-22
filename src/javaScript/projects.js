@@ -54,12 +54,12 @@ const projectsData = {
 		githubUrl: "https://github.com/nkaryoli/StoryVerse"
 	},
 	midnight: {
-		title: "Midnight Thief",
+		title: "Treasure Game",
 		subtitle: "2D Desktop Game (Java)",
-		description: "Midnight Thief is a 2D desktop game fully designed and developed by me using Java, with a strong focus on Object-Oriented Programming (OOP) principles. The project was conceived as a complete game experience, from core mechanics and logic to visual identity. The game architecture is based on clean class hierarchies, encapsulation, and separation of responsibilities, allowing entities such as the player, enemies, levels, and game states to interact in a structured and scalable way. This approach makes the codebase easier to extend and maintain. In addition to the programming aspect, all visual assets were created by me using AI tools, reinforcing the creative direction of the project and giving it a unique atmosphere aligned with the game’s theme.",
-		image: "./src/assets/projects/midnight-demo.png",
+		description: "Midnight Thief is a 2D desktop game fully designed and developed by me using Java, with a strong focus on Object-Oriented Programming (OOP) principles. The project was conceived as a complete game experience, from core mechanics and logic to visual identity. The game architecture is based on clean class hierarchies, encapsulation, and separation of responsibilities- This approach makes the codebase easier to extend and maintain. In addition to the programming aspect, all visual assets were created by me using AI tools, reinforcing the creative direction of the project and giving it a unique atmosphere aligned with the game’s theme.",
+		image: "./src/assets/projects/treasure-demo.png",
 		tech: ["Java", "Object-Oriented Programming", "Custom AI", "Desktop Game"],
-		liveUrl: "./src/assets/MidnightTheif-windows.zip",
+		liveUrl: "./src/assets/treasure-windows.zip",
 		githubUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game"
 	},
 	femcodersclub: {
