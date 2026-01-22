@@ -59,7 +59,7 @@ const projectsData = {
 		description: "Midnight Thief is a 2D desktop game fully designed and developed by me using Java, with a strong focus on Object-Oriented Programming (OOP) principles. The project was conceived as a complete game experience, from core mechanics and logic to visual identity. The game architecture is based on clean class hierarchies, encapsulation, and separation of responsibilities, allowing entities such as the player, enemies, levels, and game states to interact in a structured and scalable way. This approach makes the codebase easier to extend and maintain. In addition to the programming aspect, all visual assets were created by me using AI tools, reinforcing the creative direction of the project and giving it a unique atmosphere aligned with the game’s theme.",
 		image: "./src/assets/projects/midnight-demo.png",
 		tech: ["Java", "Object-Oriented Programming", "Custom AI", "Desktop Game"],
-		liveUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game",
+		liveUrl: "./src/assets/MidnightTheif-windows.zip",
 		githubUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game"
 	},
 	femcodersclub: {
@@ -95,7 +95,23 @@ viewDetailsBtns.forEach(btn => {
 			document.getElementById('modalTitle').textContent = project.title;
 			document.getElementById('modalSubtitle').textContent = project.subtitle;
 			document.getElementById('modalDescription').textContent = project.description;
-			document.getElementById('liveLink').href = project.liveUrl;
+			let liveUrl = project.liveUrl;
+			const liveLink = document.getElementById('liveLink');
+
+			// Check if it's a download link (ZIP file)
+			if (liveUrl.endsWith('.zip')) {
+				liveLink.setAttribute('download', '');
+				liveLink.textContent = 'Download Game';
+				// Adjust path if on projects page
+				if (window.location.pathname.includes('projects.html') || window.location.pathname.includes('/pages/')) {
+					liveUrl = liveUrl.replace('./src/', '../');
+				}
+			} else {
+				liveLink.removeAttribute('download');
+				liveLink.textContent = 'View Live Project';
+			}
+
+			liveLink.href = liveUrl;
 			document.getElementById('githubLink').href = project.githubUrl;
 
 			// Tecnologías
