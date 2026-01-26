@@ -60,7 +60,7 @@ const projectsData = {
 		image: "./src/assets/projects/treasure-demo.png",
 		tech: ["Java", "Object-Oriented Programming", "Custom AI", "Desktop Game"],
 		liveUrl: "./src/assets/treasure-windows.zip",
-		githubUrl: "https://github.com/nkaryoli/Midnight-Thief_2d-Java-Game"
+		githubUrl: "https://github.com/nkaryoli/TreasureGame_2D"
 	},
 	femcodersclub: {
 		title: "FemCodersClub",
