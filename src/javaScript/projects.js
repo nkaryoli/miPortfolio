@@ -77,7 +77,7 @@ const projectsData = {
 		subtitle: "2D Desktop Game (Java)",
 		description:
 			"Midnight Thief is a 2D desktop game fully designed and developed by me using Java, with a strong focus on Object-Oriented Programming (OOP) principles. The project was conceived as a complete game experience, from core mechanics and logic to visual identity. The game architecture is based on clean class hierarchies, encapsulation, and separation of responsibilities- This approach makes the codebase easier to extend and maintain. In addition to the programming aspect, all visual assets were created by me using AI tools, reinforcing the creative direction of the project and giving it a unique atmosphere aligned with the game’s theme.",
-		image: "./src/assets/projects/treasure-demo.png",
+		image: "./src/assets/projects/treasure-demo.gif",
 		tech: ["Java", "Object-Oriented Programming", "Custom AI", "Desktop Game"],
 		githubUrl: "https://github.com/nkaryoli/TreasureGame_2D",
 	},
@@ -96,7 +96,7 @@ const projectsData = {
 		subtitle: "2D Action Platformer Game",
 		description:
 			"Dusty Belle is a thrilling 2D action platformer developed in Python with Pygame. Take control of a brave Cowgirl in a world full of enemies, platform challenges, and intense combat. This project showcases advanced Object-Oriented Programming (OOP) architecture, memory optimization through asset caching, complex data persistence via JSON, and a polished user experience with interactive menus and save systems. Features include fluid character movement with gravity physics, patrol enemy AI with player detection, explosive grenades, ammunition management, and dynamic HUD tracking health and resources.",
-		image: "./src/assets/projects/dustybelle-demo.png",
+		image: "./src/assets/projects/dustybelle-demo.gif",
 		tech: [
 			"Python",
 			"Pygame",
@@ -104,6 +104,20 @@ const projectsData = {
 			"2D Game Development",
 		],
 		githubUrl: "https://github.com/nkaryoli/Dusty-Belle-2D-Action-Platformer",
+	},
+	battleship: {
+		title: "BattleShip 2D",
+		subtitle: "Naval Battle Game (Java)",
+		description:
+			"BattleShip 2D is an interactive 2D naval battle game developed in Java using Processing. Play on a 9x9 grid where you must discover and sink enemy ships with precision. This project features advanced state management (main menu, gameplay, victory screen), dynamic animations with explosion effects, immersive sound design with ambient music and sound effects, and an interactive UI with settings panel for audio control. The game showcases strong Object-Oriented Programming principles, event handling, and visual feedback systems to enhance player engagement and create a polished gaming experience.",
+		image: "./src/assets/projects/battleship-demo.png",
+		tech: [
+			"Java",
+			"Processing",
+			"Object-Oriented Programming",
+			"Game Development",
+		],
+		githubUrl: "https://github.com/nkaryoli/battleship-2d-java",
 	},
 };
 
