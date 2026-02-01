@@ -91,6 +91,20 @@ const projectsData = {
 		liveUrl: "https://www.femcodersclub.com/",
 		githubUrl: "https://github.com/nkaryoli/femCodersClub_Project",
 	},
+	dustybelle: {
+		title: "Dusty Belle",
+		subtitle: "2D Action Platformer Game",
+		description:
+			"Dusty Belle is a thrilling 2D action platformer developed in Python with Pygame. Take control of a brave Cowgirl in a world full of enemies, platform challenges, and intense combat. This project showcases advanced Object-Oriented Programming (OOP) architecture, memory optimization through asset caching, complex data persistence via JSON, and a polished user experience with interactive menus and save systems. Features include fluid character movement with gravity physics, patrol enemy AI with player detection, explosive grenades, ammunition management, and dynamic HUD tracking health and resources.",
+		image: "./src/assets/projects/dustybelle-demo.png",
+		tech: [
+			"Python",
+			"Pygame",
+			"Object-Oriented Programming",
+			"2D Game Development",
+		],
+		githubUrl: "https://github.com/nkaryoli/Dusty-Belle-2D-Action-Platformer",
+	},
 };
 
 const modal = document.getElementById("projectModal");
@@ -118,11 +132,11 @@ viewDetailsBtns.forEach((btn) => {
 			document.getElementById("modalSubtitle").textContent = project.subtitle;
 			document.getElementById("modalDescription").textContent =
 				project.description;
-			let liveUrl = project.liveUrl;
 			const liveLink = document.getElementById("liveLink");
+			const liveUrl = project.liveUrl;
 
-			// Hide the live link button for projects with downloadable content
-			if (liveUrl.endsWith(".zip")) {
+			// Hide the live link button for projects without liveUrl or with downloadable content
+			if (!liveUrl || liveUrl.endsWith(".zip")) {
 				liveLink.style.display = "none";
 			} else {
 				liveLink.style.display = "inline-flex";
