@@ -47,8 +47,6 @@ main {
     /* gap: 100px; */
 }
 
-
-
 #bg {
     position: fixed;
     inset: 0;
@@ -56,31 +54,14 @@ main {
     z-index: 1;
 }
 
-/* 
-.flex{
-    display:flex;
+/* Scroll Reveal Animations */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-h1{
-    color: transparent;
-    background: linear-gradient(
-        to bottom right,
-        var(--secondary-color),
-        var(--primary-color),
-        var(--tertiary-color)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-family: var(--font-family-primary);
-    font-weight: 800;
-    text-align: center;
-    font-size: var(--h1-size);
-    z-index: 1;
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-@media (width>900px){
-
-    h1{
-        font-size: 50px;
-    }
-} */
